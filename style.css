@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+body{
+    background-size: cover;
+    background-color: var(--Very-Light-Gray);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.title-one{
+    display: block;
+    text-align-last: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Grayish-Blue);
+    font-size: 38px;
+}
+
+.title-two{
+    display: block;
+    text-align-last: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(34, 34, 34);
+    font-size: 40px;
+}
+
+.main-title{
+    display: flex;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Grayish-Blue);
+    font-size: 25px;
+}
