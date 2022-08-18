@@ -11,6 +11,11 @@
     --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     background-size: cover;
@@ -18,27 +23,106 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.container{
+    display: grid;
+    margin: 30px auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns:repeat(3,330px);
+    grid-template-rows:repeat(3,210px);
+    justify-content: center;
+}
+
+.container .card-Supervisor,
+.container .card-Team-Builder,
+.container .card-Karma,
+.container .card-Calculator{
+    border-radius: 4px;
+    background: #fff;
+    padding:3px
+}
 
 .title-one{
-    display: block;
-    text-align-last: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    text-align: center;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     color: var(--Grayish-Blue);
     font-size: 38px;
+    padding: 10px;
 }
 
 .title-two{
-    display: block;
-    text-align-last: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     color: rgb(34, 34, 34);
     font-size: 40px;
+    padding: 10px;
 }
 
-.main-title{
-    display: flex;
-    align-content: center;
+.main-title{ 
+    display: flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
     color: var(--Grayish-Blue);
-    font-size: 25px;
+    font-size: 18px;
+    padding: 20px;
+}
+
+
+.line-card-supervisor{
+    height: 4px;
+    background: var(--Cyan);
+}
+
+.line-card-builder{
+    height: 4px;
+    background: var(--Red);
+}
+
+.line-card-karma{
+    height: 4px;
+    background: var(--Orange);
+}
+
+.line-card-calculator{
+    height: 4px;
+    background: var(--Blue);
+}
+
+.card-title{
+  padding: 10px; 
+  font-size: 23px;  
+}
+
+.card-text{
+ padding: 5px;
+}
+
+.image-card{
+   padding-top: 15px;
+   height: 60px;
+   width: 55px;
+   margin-left: 250px;
+}
+.container .card-Karma,
+.container .card-Team-Builder{
+    grid-column: 2/2 ;
+}
+
+.card-Supervisor:nth-of-type(1) {
+    grid-column: 1/ 1;
+    grid-row: 2/2;
+}
+
+.card-Calculator:nth-of-type(4) {
+    grid-column: 3 / 3 ;
+    grid-row: 2 / 2;
 }
