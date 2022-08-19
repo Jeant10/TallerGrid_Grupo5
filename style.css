@@ -27,8 +27,12 @@ body{
     margin: 30px auto;
     row-gap: 30px;
     justify-content: center;
+<<<<<<< HEAD
     grid-template-columns:repeat(1,330px);
     grid-template-rows:repeat(4,210px);
+=======
+    border: #000 4px solid;
+>>>>>>> 006a5351dbd4b630986183f24e39310b96af7ec5
 }
 
 .container .card-Supervisor,
@@ -37,6 +41,11 @@ body{
 .container .card-Calculator{
     border-radius: 4px;
     background: #fff;
+<<<<<<< HEAD
+=======
+    padding: 3px;
+    border: #050 4px solid;
+>>>>>>> 006a5351dbd4b630986183f24e39310b96af7ec5
 }
 
 .title-one{
@@ -180,3 +189,51 @@ body{
     }    
 }
 
+<<<<<<< HEAD
+=======
+.card-Supervisor:nth-of-type(1) {
+    grid-column: 1/ 2;
+    grid-row: 1/3;
+    margin-top: 7em;
+    margin-bottom: 7em;
+    
+}
+
+.card-Calculator:nth-of-type(4) {
+    grid-column: 3 / 3 ;
+    grid-row: 1 / 3;
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
+
+
+@media screen and (max-width: 375px) {
+    .container{
+        display: grid;
+        column-gap: 0;
+        row-gap: 20px;
+        grid-template-columns:repeat(1,330px);
+
+    }
+
+    .card-Supervisor:nth-of-type(1){
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+
+    .card-Karma {
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+
+    .card-Team-Builder{
+        grid-column: 1;
+        grid-row: 3/4;
+    }
+
+    .card-Calculator:nth-of-type(4) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+}
+>>>>>>> 006a5351dbd4b630986183f24e39310b96af7ec5
