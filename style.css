@@ -130,6 +130,9 @@ body{
         grid-template-rows:repeat(2,210px);
         justify-content: center;
     }
+    .title-one{
+        padding-top: 1.5em;
+    }
 
     .main-title{ 
         display: grid; 
